@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Clock</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -18,20 +20,20 @@
         <option value="">Marbella</option>
       </select>
 
-      <div class="city">
+      <div class="city" id="barcelona">
         <div>
           <h2>Barcelona 🇪🇸</h2>
-          <div class="date">May 24th 2023</div>
+          <div class="date"></div>
         </div>
-        <div class="time">3:37:12 <small>AM</small></div>
+        <div class="time"></div>
       </div>
 
-      <div class="city">
+      <div class="city" id="paramaribo">
         <div>
           <h2>Paramaribo 🇸🇷</h2>
-          <div class="date">May 24th 2023</div>
+          <div class="date"></div>
         </div>
-        <div class="time">3:37:12 <small>AM</small></div>
+        <div class="time"></div>
       </div>
     </div>
     <footer>
