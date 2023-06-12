@@ -12,28 +12,31 @@
   <body>
     <div class="container">
       <h1>World Clock Project</h1>
-      <select>
+
+      <select id="city">
         <option value="">Choose a city</option>
-        <option value="">Amsterdam</option>
-        <option value="">Budapest</option>
-        <option value="">Tokyo</option>
-        <option value="">Marbella</option>
+        <option value="Europe/Amsterdam">Amsterdam</option>
+        <option value="Europe/Budapest">Budapest</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="Europe/London">London</option>
       </select>
 
-      <div class="city" id="barcelona">
-        <div>
-          <h2>Barcelona 🇪🇸</h2>
-          <div class="date"></div>
+      <div class="cities">
+        <div class="city" id="barcelona">
+          <div>
+            <h2>Barcelona</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
-      </div>
 
-      <div class="city" id="paramaribo">
-        <div>
-          <h2>Paramaribo 🇸🇷</h2>
-          <div class="date"></div>
+        <div class="city" id="paramaribo">
+          <div>
+            <h2>Paramaribo</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
       </div>
     </div>
     <footer>
