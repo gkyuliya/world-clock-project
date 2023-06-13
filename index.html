@@ -7,16 +7,29 @@
     <title>World Clock</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
+      <lord-icon
+        src="https://cdn.lordicon.com/osvvqecf.json"
+        trigger="loop"
+        delay="500"
+        colors="outline:#a866ee,primary:#c69cf4,secondary:#e5d1fa,tertiary:#c69cf4"
+        stroke="45"
+        state="loop"
+        style="width: 100px; height: 100px"
+        id="clock-icon"
+      >
+      </lord-icon>
       <h1>World Clock Project</h1>
 
       <select id="city">
         <option value="">Choose a city</option>
         <option value="current">My current time</option>
         <option value="Europe/Amsterdam">Amsterdam</option>
+        <option value="Asia/Hong_Kong">Hong Kong</option>
         <option value="Europe/Budapest">Budapest</option>
         <option value="Asia/Tokyo">Tokyo</option>
         <option value="Europe/London">London</option>
@@ -25,7 +38,15 @@
       <div class="cities">
         <div class="city" id="barcelona">
           <div>
-            <h2>Barcelona</h2>
+            <h2>Barcelona 🇪🇸</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="brasilia">
+          <div>
+            <h2>Brasília 🇧🇷</h2>
             <div class="date"></div>
           </div>
           <div class="time"></div>
@@ -33,7 +54,15 @@
 
         <div class="city" id="paramaribo">
           <div>
-            <h2>Paramaribo</h2>
+            <h2>Paramaribo 🇸🇷</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="almaty">
+          <div>
+            <h2>Almaty 🇰🇿</h2>
             <div class="date"></div>
           </div>
           <div class="time"></div>
@@ -42,9 +71,15 @@
     </div>
     <footer>
       This project is
-      <a href="https://github.com/gkyuliya/world-clock-project">open source</a>
+      <a
+        href="https://github.com/gkyuliya/world-clock-project"
+        id="open-source"
+        target="_blank"
+        >open source
+      </a>
       and was coded with 💜 by Julia Gabriella Kovacs
     </footer>
+    <a href="https://lordicon.com/" id="icons">Icons by Lordicon.com</a>
     <script src="index.js"></script>
   </body>
 </html>

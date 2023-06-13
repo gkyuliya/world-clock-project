@@ -17,6 +17,26 @@ function updateTime() {
   paramariboTimeElement.innerHTML = paramariboTime.format(
     "h:mm:ss [<small>]A[</small>]"
   );
+
+  let brasiliaElement = document.querySelector("#brasilia");
+  let brasiliaDateElement = brasiliaElement.querySelector(".date");
+  let brasiliaTimeElement = brasiliaElement.querySelector(".time");
+  let brasiliaTime = moment().tz("America/Bahia");
+
+  brasiliaDateElement.innerHTML = brasiliaTime.format("MMMM Do YYYY");
+  brasiliaTimeElement.innerHTML = brasiliaTime.format(
+    "h:mm:ss [<small>]A[</small>]"
+  );
+
+  let almatyElement = document.querySelector("#almaty");
+  let almatyDateElement = almatyElement.querySelector(".date");
+  let almatyTimeElement = almatyElement.querySelector(".time");
+  let almatyTime = moment().tz("Asia/Almaty");
+
+  almatyDateElement.innerHTML = almatyTime.format("MMMM Do YYYY");
+  almatyTimeElement.innerHTML = almatyTime.format(
+    "h:mm:ss [<small>]A[</small>]"
+  );
 }
 
 function updateCity(event) {
@@ -24,7 +44,7 @@ function updateCity(event) {
   if (cityTimeZone === "current") {
     cityTimeZone = moment.tz.guess();
   }
-  let cityName = cityTimeZone.split("/")[1];
+  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector(".cities");
   citiesElement.innerHTML = `
@@ -37,6 +57,7 @@ function updateCity(event) {
             "h:mm:ss"
           )} <small>${cityTime.format("A")}</small></div>
         </div>
+        <a href="index.html" id="home-button">Go Back</a>
         `;
 }
 

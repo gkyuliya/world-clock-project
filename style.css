@@ -62,6 +62,36 @@ h2 {
   line-height: 48px;
 }
 
-a:hover {
+#open-source:hover {
   color: black;
+}
+
+#home-button {
+  font-size: 14px;
+  color: rgb(121, 104, 177);
+  border: 1px solid rgb(121, 104, 177);
+  padding: 2px 10px;
+  border-radius: 7px;
+  text-decoration: none;
+  transition: all ease-in-out 300ms;
+}
+
+#home-button:hover {
+  background-color: rgba(147, 120, 172, 0.541);
+}
+
+#open-source {
+  color: rgb(121, 104, 177);
+}
+
+#icons {
+  font-size: 10px;
+  text-decoration: none;
+  color: rgb(179, 155, 202);
+  margin-left: 300px;
+}
+
+#clock-icon {
+  display: block;
+  margin: 0 auto;
 }
